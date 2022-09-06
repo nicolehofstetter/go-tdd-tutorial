@@ -12,6 +12,7 @@ Find code in package [main](./main)
 - switch
 - const
 - named return values
+- variable declaration and initialization with ":="
 
 ## Integers
 
@@ -20,6 +21,16 @@ Find code in package [integers](./integers)
 - integers
 - documentation with examples
 
+## Iteration / Repeat
+
+Find code in package [iteration](./iteration)
+
+- for loop with variations
+- variable declaration with "var name type"
+- benchmarks
+
+
 ## Additional Links
 
 [Package Structure in Go](https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project)
+[Additional for loops](https://gobyexample.com/for)
