@@ -29,6 +29,10 @@ Find code in package [iteration](./iteration)
 - variable declaration with "var name type"
 - benchmarks
 
+## Arrays and Slices
+
+- init array
+- for with range ( like a for each)
 
 ## Additional Links
 
