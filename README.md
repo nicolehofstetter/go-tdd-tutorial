@@ -1,6 +1,7 @@
-#Go Tutorial
+# Go Tutorial
 
 This is a repo for the go tutorial: https://quii.gitbook.io/learn-go-with-tests
+
 Following sections contains notes to find concepts later
 
 ## Hello, World
@@ -53,19 +54,21 @@ Find code in package [iteration](./iteration)
 
 ```
 
-
-##structs methos and interfaces
+## structs methos and interfaces
 
 - float64
-- struct 
-- methods of structs 
+- struct
+- methods of structs
 - interfaces
 - "go interface resolution is implicit"
-
+- table driven tests (parameterized tests)
 
 ## Additional Links
 
 [Package Structure in Go](https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project)
+
 [Additional for loops](https://gobyexample.com/for)
+
 [Blog Post slices](https://go.dev/blog/slices-intro)
+
 [Table Driven Tests](https://github.com/golang/go/wiki/TableDrivenTests)

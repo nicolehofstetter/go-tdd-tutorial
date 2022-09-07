@@ -1,6 +1,9 @@
 package structs_methods_interfaces
 
-import "testing"
+import (
+	"reflect"
+	"testing"
+)
 
 func TestPerimeter(t *testing.T) {
 
@@ -15,25 +18,21 @@ func TestPerimeter(t *testing.T) {
 
 func TestArea(t *testing.T) {
 
-	checkArea := func(t *testing.T, shape Shape, want float64) {
-		got := shape.Area()
-		if got != want {
-			t.Errorf("got %g want %g", got, want)
-		}
+	areaTests := []struct {
+		shape Shape
+		want  float64
+	}{
+		{Rectangle{12, 6}, 72.0},
+		{Circle{10}, 62.83185307179586},
 	}
 
-	t.Run("calculates area of rectangles", func(t *testing.T) {
+	for _, areaTest := range areaTests {
+		t.Run("calculates area of shape"+reflect.TypeOf(areaTest.shape).String(), func(t *testing.T) {
+			got := areaTest.shape.Area()
+			if got != areaTest.want {
+				t.Errorf("got %g want %g", got, areaTest.want)
+			}
+		})
+	}
 
-		rectangle := Rectangle{12.0, 6.0}
-		want := 72.0
-
-		checkArea(t, rectangle, want)
-	})
-
-	t.Run("calculates area of circles", func(t *testing.T) {
-		circle := Circle{10}
-		want := 62.83185307179586
-
-		checkArea(t, circle, want)
-	})
 }
