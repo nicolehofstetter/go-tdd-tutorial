@@ -53,8 +53,19 @@ Find code in package [iteration](./iteration)
 
 ```
 
+
+##structs methos and interfaces
+
+- float64
+- struct 
+- methods of structs 
+- interfaces
+- "go interface resolution is implicit"
+
+
 ## Additional Links
 
 [Package Structure in Go](https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project)
 [Additional for loops](https://gobyexample.com/for)
 [Blog Post slices](https://go.dev/blog/slices-intro)
+[Table Driven Tests](https://github.com/golang/go/wiki/TableDrivenTests)
