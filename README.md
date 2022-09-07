@@ -33,8 +33,28 @@ Find code in package [iteration](./iteration)
 
 - init array
 - for with range ( like a for each)
+- slices (arrays without fixed size)
+- ```go test -cover``` to see test coverage
+
+- ```reflect.DeepEqual(a,b)``` to compare arrays
+- ```make([]int, len(inputNumbers))``` creates a new slice with a starting capacity
+
+- scoped functions ```checkSums := func(...){...}```
+
+- copy arrays
+
+```go 
+    x := [3]string{"Лайка", "Белка", "Стрелка"}
+
+	y := x[:] // slice "y" points to the underlying array "x"
+
+	z := make([]string, len(x))
+	copy(z, x[:]) // slice "z" is a copy of the slice created from array "x"
+
+```
 
 ## Additional Links
 
 [Package Structure in Go](https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project)
 [Additional for loops](https://gobyexample.com/for)
+[Blog Post slices](https://go.dev/blog/slices-intro)
